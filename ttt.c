@@ -159,7 +159,7 @@ int ComputerMove(int side) {
 		if (board[convert[i]]==EMPTY)
 			available[free++]=convert[i];
 	}
-	Randmove=(rand() % 10);
+	Randmove=(rand() % free);
 	return(available[Randmove]);
 }
 
